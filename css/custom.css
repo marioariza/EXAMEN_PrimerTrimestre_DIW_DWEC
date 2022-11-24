@@ -8,37 +8,108 @@
 .loader {
     width: 100%;
     height: 100vh;
-    background-color: #FFF8E5;
+    background-color: #f1f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    color: #A0414C;
-    -webkit-text-stroke: 2px #E2E1B9;
+    color: #6bcbe0;
+    -webkit-text-stroke: 2px #1e7bbf;
     z-index: 10000;
     transition: 3.5s ease-in-out;
 }
 
 .frase_loader {
-    font-family: 'Loader';
-    font-size: 15vh;
+    font-family: 'Titulo';
+    font-size: 10vh;
 }
 
 .loader2 {
     visibility: hidden;
 }
 
+/* INICIO */
 
 @font-face {
     font-family: 'Texto';
-    src: url(../fonts/texto_cv.ttf);
+    src: url(../fonts/texto_cv.otf);
 }
 
-.letra_cv {
+
+@font-face {
+    font-family: 'Titulo';
+    src: url(../fonts/titulo_cv.otf);
+}
+
+.menu_nav {
+    height: 17vh;
+    z-index: 100;
+}
+
+.nombre_nav {
+    font-family: 'Titulo';
+    font-size: 8vh;
+    margin-left: 5%;
+    color: #1dd3b0;
+}
+
+.enlaces_nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Titulo';
+    font-size: 4vh;
+    color: black;
+    background-color: white;
+    padding: 1%;
+}
+
+.separa_nav {
+    margin-left: 40px;
+}
+
+.tarjeta {
+    padding: 5%;
+    background-image: url(../img/fondo_target.jpg);
+}
+
+.card {
+    display: block;
+    margin: auto;
+    width: 50vh;
+}
+
+.imagen_card {
+    border-radius: 50%;
+}
+
+.nombre_card {
+    font-family: 'Titulo';
+    text-align: center;
+    padding: 5%;
+    color: #5bc0be;
+}
+
+.card-text {
     font-family: 'Texto';
+    text-align: center;
 }
 
-.espaciado_arriba {
-    width: auto;
-    height: 20vh;
+.rrss {
+    font-family: 'Titulo';
+}
+
+.rrss_izquierda {
+    padding: 3%;
+    color: #5bc0be;
+}
+
+.rrss_derecha {
+    text-align: end;
+    padding: 3%;
+    color: #5bc0be;
+}
+
+
+.pene {
+    height: 100vh;
 }
