@@ -1,0 +1,44 @@
+/* LOADER */
+
+@font-face {
+    font-family: 'Loader';
+    src: url(../fonts/letra_loader.otf);
+}
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF8E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    color: #A0414C;
+    -webkit-text-stroke: 2px #E2E1B9;
+    z-index: 10000;
+    transition: 3.5s ease-in-out;
+}
+
+.frase_loader {
+    font-family: 'Loader';
+    font-size: 15vh;
+}
+
+.loader2 {
+    visibility: hidden;
+}
+
+
+@font-face {
+    font-family: 'Texto';
+    src: url(../fonts/texto_cv.ttf);
+}
+
+.letra_cv {
+    font-family: 'Texto';
+}
+
+.espaciado_arriba {
+    width: auto;
+    height: 20vh;
+}
