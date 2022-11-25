@@ -212,6 +212,63 @@
     font-size: 3.5vh; 
 }
 
+/* FORMACION */
+
+.titulo_formacion {
+    font-family: 'Titulo';
+    font-size: 10vh;
+    color: #5bc0be;
+    -webkit-text-stroke: 1px white;
+    text-align: center;
+    padding: 5%;
+}
+
+.container_formacion_img {
+    border-right: 2px solid white;
+    margin-bottom: 7%;
+}
+
+.container_formacion_txt {
+    border-left: 2px solid white;
+    margin-bottom: 7%;
+}
+
+.container_formacion_img2 {
+    border-left: 2px solid white;
+}
+
+.container_formacion_txt2 {
+    border-right: 2px solid white;
+}
+
+.img_formacion {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.img_ilerna {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    width: 20%;
+}
+
+.texto_formacion_titulo {
+    font-family: 'Titulo';
+    padding: 3%;
+    color:#5bc0be;
+    font-size: 4vh;
+    text-align: center;
+}
+
+.texto_formacion {
+    font-family: 'Texto';
+    padding: 3%;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+}
 
 @media screen and (max-width: 1400px) {
 
