@@ -256,7 +256,7 @@
 
 .texto_formacion_titulo {
     font-family: 'Titulo';
-    padding: 3%;
+    padding: 4%;
     color:#5bc0be;
     font-size: 4vh;
     text-align: center;
@@ -266,7 +266,7 @@
     font-family: 'Texto';
     padding: 3%;
     color: white;
-    font-size: 3vh;
+    font-size: 6vh;
     text-align: center;
 }
 

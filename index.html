@@ -32,15 +32,15 @@
                     <li class="nav-item dropdown separa_nav">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre mí</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Datos personales</a></li>
-                            <li><a class="dropdown-item" href="#">Descripción personal</a></li>
+                            <li><a class="dropdown-item" href="#datos">Datos personales</a></li>
+                            <li><a class="dropdown-item" href="#descripcion">Descripción personal</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown separa_nav">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CV</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Formación</a></li>
-                            <li><a class="dropdown-item" href="#">Skills</a></li>
+                            <li><a class="dropdown-item" href="#formacion">Formación</a></li>
+                            <li><a class="dropdown-item" href="#skills">Skills</a></li>
                             <li><a class="dropdown-item" href="#">Experiencia</a></li>
                             <li><a class="dropdown-item" href="#">Idiomas</a></li>
                         </ul>
@@ -97,7 +97,7 @@
         <div class="row">
             <div class="col-2 adorno_datos_personales"></div>
             <div class="col-10 container_datos_personales">
-                <p class="titulo_datos_personales">Datos personales</p>
+                <p class="titulo_datos_personales" id="datos">Datos personales</p>
                 
                 <div class="row">
                     <div class="col-xl-4 col-lg-6 telefono_datos_personales">
@@ -105,7 +105,7 @@
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                         </svg>
                         <br>
-                        <p class="telefono_texto">+34 627 868 664</p>
+                        <p class="telefono_texto">(+34) 627 868 664</p>
                     </div>
                     <div class="col-xl-4 col-lg-6 email_datos_personales">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-envelope-at-fill email" viewBox="0 0 16 16">
@@ -137,7 +137,7 @@
 
             <div class="col-2 adorno_datos_personales"></div>
             <div class="col-10 container_descripcion_personal">
-                <p class="titulo_descripcion_personal">Descripción personal</p>
+                <p class="titulo_descripcion_personal" id="descripcion">Descripción personal</p>
                 
                 <p class="texto_descripcion_personal">Actualmente curso el 2º año del Grado Superior de Desarrollo de Aplicaciones Web (DAW) en ILERNA FP ubicada en mi ciudad de nacimiento y residencia, Sevilla.
                     <br><br>
@@ -152,24 +152,36 @@
     <div class="container-fluid formacion bg-black">
         <div class="row form">
             <div class="col-12 container_formacion">
-                <p class="titulo_formacion">Formación</p>
+                <p class="titulo_formacion" id="formacion">Formación</p>
             </div>
 
             <div class="col-6 container_formacion_img">
-                <img src="img/monroy.png" class="img-fluid img_formacion" alt="...">
+                <p class="texto_formacion">2019-2021</p>
             </div>
             <div class="col-6 container_formacion_txt">
                 <p class="texto_formacion_titulo">Bachillerato - IES Cristóbal de Monroy</p>
-                <p class="texto_formacion">2019-2021</p>
             </div>
             <br><br>
             <div class="col-6 container_formacion_txt2">
                 <p class="texto_formacion_titulo">Grado DAW - ILERNA Sevilla</p>
-                <p class="texto_formacion">2021-2023</p>
             </div>
             <div class="col-6 container_formacion_img2">
-                <img src="img/iler.png" class="img-fluid img_ilerna" alt="...">
+                <p class="texto_formacion">2021-2023</p>
             </div>
+
+            <div class="col-12 container_formacion">
+                <p class="titulo_formacion" id="skills">Skills</p>
+            </div>
+
+            <div class="col-6 container-skills">
+
+            </div>
+
+            <div class="col-12 container_formacion">
+                <p class="titulo_formacion" id="skills">Experiencia</p>
+            </div>
+
+
 
         </div>
     </div>
