@@ -3,9 +3,9 @@ window.addEventListener("load",function() {
 })
 
 function cambiar(){
-    document.getElementById('cambiomapa').src="../img/grande.png";
+    document.getElementById('cambiomapa').src="img/grande.png";
 }
   
 function volver(){
-    document.getElementById('cambiomapa').src="../img/mapafuera.png";
+    document.getElementById('cambiomapa').src="img/mapafuera.png";
 }
