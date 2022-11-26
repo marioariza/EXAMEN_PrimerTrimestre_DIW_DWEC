@@ -270,6 +270,20 @@
     text-align: center;
 }
 
+.camarero {
+    display: block;
+    margin: auto;
+    color: #5bc0be;
+}
+
+.texto_exp {
+    font-family: 'Texto';
+    padding:2% ;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+}
+
 @media screen and (max-width: 1400px) {
 
     .card {
