@@ -214,6 +214,10 @@
 
 /* FORMACION */
 
+.formacion {
+    border-bottom: 2px solid white;
+}
+
 .titulo_formacion {
     font-family: 'Titulo';
     font-size: 10vh;
@@ -282,6 +286,41 @@
     color: white;
     font-size: 3vh;
     text-align: center;
+}
+
+
+.container_idioma_img {
+    border-right: 2px solid white;
+    margin-bottom: 7%;
+}
+
+.container_idioma_txt {
+    border-left: 2px solid white;
+    
+}
+
+.container_idioma_img2 {
+    border-left: 2px solid white;
+    margin-bottom: 7%;
+}
+
+.container_idioma_txt2 {
+    border-right: 2px solid white;
+}
+
+
+
+.adorno_portfolio {
+    background-color: #5bc0be;
+    border-left: 3px solid white;
+}
+
+.titulo_portfolio {
+    font-family: 'Titulo';
+    font-size: 10vh;
+    color: #5bc0be;
+    -webkit-text-stroke: 1px white;
+    margin-left: 2%;
 }
 
 @media screen and (max-width: 1400px) {
