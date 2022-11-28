@@ -10,7 +10,7 @@ function volver(){
     document.getElementById('cambiomapa').src="img/mapafuera.png";
 }
 
-function efectoHabilidades(){
+function efectoHabilidades() {
     let skills = document.getElementById("skills");
     let distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills >= 300){
@@ -30,4 +30,34 @@ function efectoHabilidades(){
 
 window.onscroll = function(){
     efectoHabilidades();
+}
+
+let nombre = document.getElementById('name');
+let email = document.getElementById('mail');
+let telefono = document.getElementById('phone');
+let mensaje = document.getElementById('message');
+let error = document.getElementById('error');
+
+function enviarFormulario() {
+
+    console.log('Enviando formulario...');
+
+    let mensajeError = [];
+
+    if (nombre.value === null || nombre.value === '') {
+        mensajeError.push('Ingresa un nombre');
+    }
+
+    if (email.value === null || email.value === '') {
+        mensajeError.push('Ingresa un email.');
+    }
+
+    if (mensaje.value === null || mensaje.value === '') {
+        mensajeError.push('Ingresa un mensaje');
+    }
+
+    error.innerHTML = mensajeError.join(', ');
+
+    return false;
+
 }
