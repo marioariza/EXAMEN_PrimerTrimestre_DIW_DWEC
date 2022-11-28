@@ -60,7 +60,9 @@ function enviar() {
     let valorTelefono = telefono.value;
     let expRegTel = /^\d{3}\s\d{2}\s\d{2}\s\d{2}$/;
 
-    if (valorTelefono.match(expRegTel) == null) {
+    if (valorTelefono === null || valorTelefono === '') {
+        alert('Tienes que rellenar el campo "Télefono".');
+    } else if (valorTelefono.match(expRegTel) == null) {
         alert('Télefono inválido (Ejemplo: 665 65 65 65, 9 cifras, las 3 primeras separadas por un espacio las siguientes agrupadas de 2 en 2).')
     }
 
@@ -68,7 +70,9 @@ function enviar() {
 
     if (valorMensaje === null || valorMensaje === '') {
         alert('Tienes que rellenar el campo "Mensaje".');
-    } else {
+    } 
+
+    if (valornombre !== null && valornombre !== '' && valornombre.match(expRegNomApe) !== null && valorEmail !== null && valorEmail !== '' && valorEmail.match(expRegEmail) !== null && valorTelefono !== null && valorTelefono !== '' && valorTelefono.match(expRegTel) !== null && valorMensaje !== null && valorMensaje !== '') {
         alert('Formulario enviado correctamente');
     }
 

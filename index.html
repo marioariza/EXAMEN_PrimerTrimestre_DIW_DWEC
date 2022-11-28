@@ -373,25 +373,23 @@
                     
                     <div class="d-flex justify-content-center align-items-center">
                         <label for="name" class="formulario_contactame">Nombre y apellidos: &nbsp;</label>
-                        <input type="text" id="name" placeholder="Cristiano Ronaldo...">
+                        <input type="text" id="name" required placeholder="Cristiano Ronaldo...">
                     </div>
                     <br><br>
                     <div class="d-flex justify-content-center align-items-center">
                         <label for="mail">Email: &nbsp;</label>
-                        <input type="email" id="mail" placeholder="nombre@gmail.com...">
+                        <input type="email" id="mail" required placeholder="nombre@gmail.com...">
                     </div>
                     <br><br>
                     <div class="d-flex justify-content-center align-items-center">
-                        <label for="phone">Télefono: *&nbsp;</label>
-                        <input type="text" id="phone" placeholder="665 65 65 65...">
+                        <label for="phone">Télefono: &nbsp;</label>
+                        <input type="text" id="phone" required placeholder="665 65 65 65...">
                     </div>
                     <br><br>
                     <div class="d-flex justify-content-center align-items-center">
                         <textarea name="message" id="message" required placeholder="Mensaje..."></textarea>
                     </div>
-                    <br>
-                    <p class="text-center">* = No obligatorio</p>
-                    <br>
+                    <br><br>
                     <div class="d-flex justify-content-center align-items-center">
                         <input type="submit" class="boton_form" id="btn" onclick="enviar()" value="Enviar">
                     </div>
