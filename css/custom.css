@@ -498,6 +498,14 @@
     text-decoration: none;
 }
 
+.formulario_contactame {
+    font-family: 'Texto';
+}
+
+.boton_form {
+    background-color: #5bc0be;
+}
+
 @media screen and (max-width: 1400px) {
 
     .card {

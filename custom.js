@@ -32,32 +32,44 @@ window.onscroll = function(){
     efectoHabilidades();
 }
 
-let nombre = document.getElementById('name');
-let email = document.getElementById('mail');
-let telefono = document.getElementById('phone');
-let mensaje = document.getElementById('message');
-let error = document.getElementById('error');
+function enviar() {
 
-function enviarFormulario() {
+    let nombre = document.getElementById('name');
+    let email = document.getElementById('mail');
+    let telefono = document.getElementById('phone');
+    let mensaje = document.getElementById('message');
 
-    console.log('Enviando formulario...');
+    let valornombre = nombre.value;
+    let expRegNomApe = "^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$";
 
-    let mensajeError = [];
-
-    if (nombre.value === null || nombre.value === '') {
-        mensajeError.push('Ingresa un nombre');
+    if (valornombre === null || valornombre === '') {
+        alert('Tienes que rellenar el campo "Nombre".');
+    } else if (valornombre.match(expRegNomApe) == null) {
+        alert('Nombre y apellidos inválidos (Ejemplo: Cristiano Ronaldo)');
     }
 
-    if (email.value === null || email.value === '') {
-        mensajeError.push('Ingresa un email.');
+    let valorEmail = email.value;
+    let expRegEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
+
+    if (valorEmail === null || valorEmail === '') {
+        alert('Tienes que rellenar el campo "Email".');
+    } else if (valorEmail.match(expRegEmail) == null) {
+        alert('Email inválido (Ejemplo: nombre@gmail.com).')
     }
 
-    if (mensaje.value === null || mensaje.value === '') {
-        mensajeError.push('Ingresa un mensaje');
+    let valorTelefono = telefono.value;
+    let expRegTel = /^\d{3}\s\d{2}\s\d{2}\s\d{2}$/;
+
+    if (valorTelefono.match(expRegTel) == null) {
+        alert('Télefono inválido (Ejemplo: 665 65 65 65, 9 cifras, las 3 primeras separadas por un espacio las siguientes agrupadas de 2 en 2).')
     }
 
-    error.innerHTML = mensajeError.join(', ');
+    let valorMensaje = mensaje.value;
 
-    return false;
+    if (valorMensaje === null || valorMensaje === '') {
+        alert('Tienes que rellenar el campo "Mensaje".');
+    } else {
+        alert('Formulario enviado correctamente');
+    }
 
 }
