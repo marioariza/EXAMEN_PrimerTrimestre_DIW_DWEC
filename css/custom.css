@@ -402,7 +402,7 @@
     font-family: 'Texto';
 
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
+
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
@@ -493,7 +493,10 @@
     100%{width: 65%;}
 }
 
-
+.texto_footer {
+    font-family: 'Texto';
+    text-decoration: none;
+}
 
 @media screen and (max-width: 1400px) {
 
